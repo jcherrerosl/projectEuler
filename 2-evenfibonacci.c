@@ -21,9 +21,9 @@ int	fibonacci(int index)
 		return (fibonacci(index - 2) + fibonacci(index - 1));
 }
 
-long	even_sum(int top)
+size_t	even_sum(int top)
 {
-	long	sum;
+	size_t	sum;
 	int		i;
 
 	sum = 0;
@@ -40,7 +40,7 @@ long	even_sum(int top)
 int	main(void)
 {
 	int		top;
-	long	sum;
+	size_t	sum;
 
 	top = 4000000;
 	sum = even_sum(top);
